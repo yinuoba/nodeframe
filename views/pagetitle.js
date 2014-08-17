@@ -1,5 +1,5 @@
 module.exports = {
-	"extrabux": {	// weixin项目
-		"index": "extrabux test"
+	"extrabux": {	// nodeframe项目
+		"index": "nodeframe test1"
 	}
 }

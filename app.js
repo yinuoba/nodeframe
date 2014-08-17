@@ -31,10 +31,9 @@ app.engine('.html', require('ejs').__express)
 app.set('view engine', 'html')
 
 app.set('views', path.join(__dirname, 'views'))
-app.set('public', path.join(__dirname, 'public'))
+app.set('public', path.join(__dirname, 'assets'))
 
-app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.static(path.join(__dirname, 'public/weixin')))
+app.use(express.static(path.join(__dirname, 'assets')))
 
 app.use(express.logger('dev'))
 app.use(express.json())
@@ -46,7 +45,7 @@ app.use(app.router)
 // livereload
 reloadserver = livereload.createServer()
 reloadserver.watch(__dirname + "/views/")
-reloadserver.watch(__dirname + "/public/")
+reloadserver.watch(__dirname + "/assets/")
 
 // 路由
 var routes = require('./routers/router')

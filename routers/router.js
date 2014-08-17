@@ -54,7 +54,7 @@ module.exports = function(app) {
 					};
 
 					// 检测业务js文件是否存在
-					var jsFile = 'public/js/appjs' + url + '.js';
+					var jsFile = 'assets/js/appjs' + url + '.js';
 					if(fs.existsSync(jsFile)){
 						data['jsFile'] = '/js/appjs' + url + '.js';
 					}
