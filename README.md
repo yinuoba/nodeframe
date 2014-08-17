@@ -30,16 +30,15 @@ nodeframe
 
 * 项目使用了sass、compass。
 
-* 
+* 项目对静态资源进行了打包部署。
 
 
 ## 目录结构
-    ├─document - 项目文档
     ├─common
     ├─conf ─ 配置文件
     ├─controllers - 控制器
     ├─logs ─ 服务器日志文件
-    ├─public ─ 静态资源文件
+    ├─assets ─ 静态资源文件
     │      ├─dist ─ 打包后的静态资源目录
     │      ├─css ─ sass生成后的css 或直接写的css
     │      ├─images ─ 背景图片文件夹
@@ -58,7 +57,7 @@ nodeframe
     │    ├─partials 独立模块 如头尾
     │    ├─index.html ─ index模块
     │    ├─pagetitle ─ 目录配置文件
-    ├─extrabux.json 航班数据
+    ├─extrabux.json test数据
     ├─app.js 启动文件
     ├─package.json
     ├─README.md 项目说明文件
