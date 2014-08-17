@@ -1,0 +1,14 @@
+<% include ../partials/header.html %>
+<div id="extraTabs" class="extraTabs">
+    <% if (extraData.length) { var dateArr = []; %>
+    <ul id="selectDate" class="selectDate">
+        <% extraData.forEach(function(extra){ if(dateArr.indexOf(extra['date']) === -1){ dateArr.push(extra['date']);  %>
+        <li date='<%= extra.date %>'><a href="javascript:;" title="<%= extra.date %>"><span><%= extra.date %></span></a></li>
+        <% }}) %>
+    </ul>
+    <% } %>
+    <!-- 飞机票列表 -->
+    <div id="planesListContainer" class="listContainer clr"></div>
+</div>
+<!-- 引入业务js -->
+<% include ../partials/footer.html %>

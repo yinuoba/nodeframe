@@ -1,0 +1,60 @@
+/*!
+ * some global var
+ */
+$linkColor: #555;
+$hoverColor: #E12704;
+$color: #fff;
+
+@function half($n) {
+  @return $n / 2;
+}
+
+@mixin height($height){
+  height: $height;
+  line-height: $height;
+}
+
+/**
+ * center wrap containner
+ */
+.resetWrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**
+ * font-family and font-size
+ */
+.resetFont{
+  font-family: $fontCn;
+  font-size: 12px;
+}
+
+/**
+ * a link base css
+ */
+a{
+  @extend .resetFont;
+  text-decoration: none;
+  color: $linkColor;
+  &:active,
+  &:hover {
+    outline: none;
+    color: $hoverColor;
+  }
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.cl{
+  clear: left;
+}
+.cr{
+  clear: right;
+}
+.clr{
+  clear: both;
+}

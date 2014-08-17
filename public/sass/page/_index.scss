@@ -1,0 +1,47 @@
+/**
+ * 首页顶部
+ */
+.topHeight{@include height(60px)}
+#topAll{
+  @extend .topHeight;
+  background-color: #F1F1F1;
+  border-bottom: 1px solid #D5D5D5;
+  padding-left: 50px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.extraTabs{
+  width: 100%;
+  padding-bottom: 200px;
+  @extend .fl;
+  background:#BBD9EE;
+  ul.selectDate{
+    margin:0;
+    padding:10px 10px 0 50px;
+    list-style:none;
+    li{
+      display:inline;
+      a{
+        @extend .fl;
+        background:inline-image("/images/tableft.gif") no-repeat left top;
+        padding:0 0 0 4px;
+        text-decoration:none;
+        span{
+          @extend .fl;
+          display:block;
+          background:inline-image("/images/tabright.gif") no-repeat right top;
+          padding:7px 15px 4px 6px;
+          color:#666;
+        }
+      }
+    }
+  }
+}
+.listContainer{
+  padding: 20px 0 0 50px;
+  table{
+    @include table-scaffolding;
+    @include inner-table-borders(1px, #7a98c6);
+    @include outer-table-borders(1px);
+  }
+}

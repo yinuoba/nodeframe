@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <title><%= title %></title>
+  <% if(environment === 'production'){ %>
+  <link rel="stylesheet" type="text/css" href="/dist/css/main.css">
+  <script src="/dist/js/base.min.js"></script>
+  <script src="/dist/js/require.config.min.js"></script>
+  <% } else { %>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script src="/js/basejs/jquery.js"></script>
+  <script src="/js/basejs/prototype.js"></script>
+  <script src="/js/basejs/require.js"></script>
+  <script src="/js/basejs/require.config.js"></script>
+  <% } %>
+</head>
+<body>
+<!-- 顶部 开始 -->
+<div id="topAll">
+	extrabux test
+</div>
+<!-- 顶部 结束 -->
