@@ -14,11 +14,11 @@ var logger = require('../common/log').logger
  * @param  {[type]} res [description]
  * @return {[type]}     [description]
  */
-exports.base = function(req, res, app) {
+exports.base = function(req, res) {
   var method = req.method
   var url = req.url
   var tplpath = url.slice(1) // view的路径
-  var reqpath = app.get('views') + url + '.html' // 获取文件路径
+  var reqpath = config['viewsPath'] + url + '.html' // 获取文件路径
 
   var tplArr = tplpath.split('/')
   var appName = tplArr[0] // 取appname
@@ -48,7 +48,7 @@ exports.base = function(req, res, app) {
       }
 
       // 根据当前url获取对应appjs的路径
-      data['jsFile'] = common.getJsFilePath(url);
+      data['jsFile'] = common.getAppjsPath(url);
 
       // extrabux路由
       if (reqpath.indexOf('extrabux') !== -1) {

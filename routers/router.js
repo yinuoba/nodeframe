@@ -13,7 +13,5 @@ module.exports = function(app) {
 	app.get('/extraData', extrabuxControllers.extrabux);
 
 	// common route
-	app.get('*', function(req, res, app){
-		commonControllers.base(req, res, app)
-	})
+	app.get('*', commonControllers.base)
 }

@@ -11,6 +11,7 @@ module.exports = {
    * @return {[type]}
    */
   mkdir: function(path) {
+    // 不存在则创建目录
     if (!fs.existsSync(path)) {
       fs.mkdir(path, function() {
         console.log(path + "文件夹创建成功！");
@@ -22,9 +23,10 @@ module.exports = {
    * @param  {[type]} path [description]
    * @return {[type]}      [description]
    */
-  getJsFilePath: function(path) {
+  getAppjsPath: function(path) {
     // 检测业务js文件是否存在
-    var jsFile = config['appjs'] + path + '.js';
+    var jsFile = config['appjsPath'] + path + '.js';
+    // 文件存在则返回完整文件路径
     if (fs.existsSync(jsFile)) {
       return '/js/appjs' + path + '.js';
     }
