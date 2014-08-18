@@ -31,7 +31,7 @@ app.engine('.html', require('ejs').__express)
 app.set('view engine', 'html')
 
 app.set('views', path.join(__dirname, 'views'))
-app.set('public', path.join(__dirname, 'assets'))
+app.set('assets', path.join(__dirname, 'assets'))
 
 app.use(express.static(path.join(__dirname, 'assets')))
 

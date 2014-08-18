@@ -8,5 +8,7 @@ module.exports = {
 	"log_level": "log",
 	"baseData": {
 	},
-	"environment": 'production'	// production 生产环境  development 开发环境
+	"environment": 'production',	// production 生产环境  development 开发环境
+	"assetsPath": 'assets',		// 静态资源目录
+	"appjsPath": 'assets/js/appjs/',		// 业务js文件目录
 };
