@@ -3,10 +3,9 @@
  * @type {[type]}
  */
 var mysql = require('mysql')
-var _ = require('underscore')
-var config = require('../conf/config')
+var config = require(CONF + 'config')
 
-var connection = mysql.createConnection(config['mySqlConf'])
+var connection = mysql.createConnection(config['mysql'])
 
 connection.connect()
 

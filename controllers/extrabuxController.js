@@ -1,6 +1,5 @@
-var logger = require('../common/log').logger
 var extrabuxObj = require('../extrabux')
-var mysql = require('../database/mysql')
+// var mysql = require(DATABASE + 'mysql')
 
 exports.extrabux = function(req, res) {
   var params = req.query

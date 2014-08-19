@@ -8,7 +8,7 @@ module.exports = {
   "logLevel": "log",
   "baseData": {},
   "environment": 'production', // production 生产环境  development 开发环境
-  "mySqlConf": { // mysql数据库配置
+  "mysql": { // mysql数据库配置
     host: 'localhost',
     user: 'root',
     password: '',

@@ -1,12 +1,7 @@
-var fs = require('fs')
-var path = require('path')
-var url = require('url')
-var common = require('../common/common')
-var config = require('../conf/config')
-var pageTitleObj = require('../views/pagetitle')
-var extrabuxObj = require('../extrabux')
-
-var logger = require('../common/log').logger
+var common = require(COMMON + 'common')
+var config = require(CONF + 'config')
+var pageTitleObj = require(VIEWS + 'pagetitle')
+var extrabuxObj = require(BASEDIR + 'extrabux')
 
 /**
  * 通用路由

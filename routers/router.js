@@ -1,8 +1,8 @@
 /**
  * 请求路由
  */
-var extrabuxControllers = require('../controllers/extrabuxController')
-var commonControllers = require('../controllers/commonController')
+var extrabuxControllers = require(CONTROLLERS + 'extrabuxController')
+var commonControllers = require(CONTROLLERS + 'commonController')
 
 module.exports = function(app) {
 
