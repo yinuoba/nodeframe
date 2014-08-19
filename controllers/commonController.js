@@ -18,7 +18,7 @@ exports.base = function(req, res) {
   var method = req.method
   var url = req.url
   var tplpath = url.slice(1) // view的路径
-  var reqpath = config['viewsPath'] + url + '.html' // 获取文件路径
+  var reqpath = VIEWS + url + '.html' // 获取文件路径
 
   var tplArr = tplpath.split('/')
   var appName = tplArr[0] // 取appname
@@ -70,9 +70,7 @@ exports.dirList = function(req, res) {
   var method = req.method
   var url = req.url
   var tplpath = url.slice(1) // view的路径
-  var reqpath = config['assetsPath'] + url + '.html' // 获取文件路径
 
-  reqpath = config['assetsPath'] + "index.html"
   res.render(tplpath, {
     pageTitleObj: pageTitleObj
   })

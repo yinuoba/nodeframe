@@ -3,13 +3,16 @@
  * @type {Object}
  */
 module.exports = {
-	"host": 'localhost',
-	"port": 8080,
-	"log_level": "log",
-	"baseData": {
-	},
-	"environment": 'production',	// production 生产环境  development 开发环境
-	"viewsPath": 'views/',	// 模版目录
-	"assetsPath": 'assets/',		// 静态资源目录
-	"appjsPath": 'assets/js/appjs/',		// 业务js文件目录
+  "host": 'localhost',
+  "port": 8080,
+  "logLevel": "log",
+  "baseData": {},
+  "environment": 'production', // production 生产环境  development 开发环境
+  "mySqlConf": { // mysql数据库配置
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database:'nodeframe',
+    port: 3306
+  }
 };

@@ -25,7 +25,7 @@ module.exports = {
    */
   getAppjsPath: function(path) {
     // 检测业务js文件是否存在
-    var jsFile = config['appjsPath'] + path + '.js';
+    var jsFile = APPJS + path + '.js';
     // 文件存在则返回完整文件路径
     if (fs.existsSync(jsFile)) {
       return '/js/appjs' + path + '.js';
