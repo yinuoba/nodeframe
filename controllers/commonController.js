@@ -46,7 +46,7 @@ exports.base = function(req, res) {
       data['jsFile'] = common.getAppjsPath(url);
 
       // extrabux路由
-      if (reqpath.indexOf('extrabux') !== -1) {
+      if (url.indexOf('extrabux') !== -1) {
         data['extraData'] = extrabuxObj
       }
 
