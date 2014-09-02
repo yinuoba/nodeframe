@@ -72,7 +72,7 @@ app.use(express.urlencoded())
 app.use(express.methodOverride())
 
 // livereload
-if(config['environment'] == 'production'){
+if(config['environment'] == 'development'){
 	require(COMMON + 'livereload')
 }
 

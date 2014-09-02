@@ -9,7 +9,7 @@ images_dir = "images"
 javascripts_dir = "js"
 cache_path = "/.sass-cache"
 output_style = :compressed
-environment = :production
+environment = :productions
 output_style = (environment == :production) ? :compressed : :expanded
 line_comments = false
 
