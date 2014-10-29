@@ -15,7 +15,7 @@ require([], function () {
 		dotLeaveFun: this.bannerLeaveFun
 	});
 
-	// 成功案例左箭头
+	// 成功案例左箭头e
 	$('.prevCase').hover(function(){
 		$(this).addClass('prevHover');
 	}, function(){
