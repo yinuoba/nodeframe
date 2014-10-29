@@ -1,7 +1,6 @@
 var common = require(COMMON + 'common')
 var config = require(CONF + 'config')
 var pageTitleObj = require(VIEWS + 'pagetitle')
-var extrabuxObj = require(BASEDIR + 'extrabux')
 
 /**
  * 通用路由
@@ -42,12 +41,7 @@ exports.base = function(req, res) {
         jsFile: false
       }
       // 根据当前url获取对应appjs的路径
-      data['jsFile'] = common.getAppjsPath(url.toLowerCase());
-
-      // extrabux路由
-      if (url.indexOf('extrabux') !== -1) {
-        data['extraData'] = extrabuxObj
-      }
+      data['jsFile'] = common.getAppjsPath(url.toLowerCase())
 
       res.render(tplpath, data)
     }
@@ -64,7 +58,7 @@ exports.dirList = function(req, res) {
   var method = req.method
   var url = req.url
   var tplpath = url.slice(1) // view的路径
-  var href, mtime, reqpath, fullpath;
+  var href, mtime, reqpath, fullpath
   var mtimeObj = {}, mtimeArr = [];
 
   // 遍历pagetitle.js中的各个目录，获取各个目录的最后修改时间
