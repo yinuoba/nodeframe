@@ -1,6 +1,6 @@
 .newsBanner{
 	@extend .caseBanner;
-	background: url("/images/news_bg.png");
+	background: url("/public/images/news_bg.png");
 }
 .newsRightBody{
 	padding-bottom: 60px;
@@ -10,7 +10,7 @@
 			@include height(34px);
 			padding-left: 22px;
 			border-bottom: 1px dotted #D4D4D4;
-			background: url("/images/news_dot.png") 10px center no-repeat;
+			background: url("/public/images/news_dot.png") 10px center no-repeat;
 			a{
 				@extend .caseListFont;
 				color: $commonFontColor;

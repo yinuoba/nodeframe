@@ -608,15 +608,15 @@ ul.ourContact li a:hover {
 }
 
 .contact_phone_bg {
-  background: url("/images/contact_phone.png") left center no-repeat;
+  background: url("/public/images/contact_phone.png") left center no-repeat;
 }
 
 .contact_mobile_bg {
-  background: url("/images/contact_mobile.png") left center no-repeat;
+  background: url("/public/images/contact_mobile.png") left center no-repeat;
 }
 
 .contact_email_bg {
-  background: url("/images/contact_email.png") left center no-repeat;
+  background: url("/public/images/contact_email.png") left center no-repeat;
 }
 
 .caseBorder, .caseTitleShape, .caseLeft h3.leftTitle, .rightTitle, .caseLeft ul li, .caseLeft dl dt {
@@ -677,7 +677,7 @@ ul.ourContact li a:hover {
 .caseLeft ul li {
   height: 39px;
   line-height: 39px;
-  background: url("/images/item_bg_normal.png") 10px center no-repeat;
+  background: url("/public/images/item_bg_normal.png") 10px center no-repeat;
   padding-left: 25px;
 }
 .caseLeft ul li a {
@@ -687,7 +687,7 @@ ul.ourContact li a:hover {
   color: #e7141a;
 }
 .caseLeft ul li.current {
-  background: url("/images/item_bg.png") 10px center no-repeat #f8f8f8;
+  background: url("/public/images/item_bg.png") 10px center no-repeat #f8f8f8;
 }
 .caseLeft ul li.current a {
   color: #e7141a;
@@ -698,7 +698,7 @@ ul.ourContact li a:hover {
 .caseLeft dl dt {
   width: 220px;
   height: 80px;
-  background-image: url("/images/service_item.png");
+  background-image: url("/public/images/service_item.png");
   background-repeat: no-repeat;
   text-indent: -9999px;
 }
@@ -717,10 +717,10 @@ ul.ourContact li a:hover {
   color: #e7141a;
 }
 .caseLeft dl dd.movieItem {
-  background: url("/images/case_movie.png") 10px center no-repeat;
+  background: url("/public/images/case_movie.png") 10px center no-repeat;
 }
 .caseLeft dl dd.otherItem {
-  background: url("/images/case_service.png") 10px center no-repeat;
+  background: url("/public/images/case_service.png") 10px center no-repeat;
 }
 
 .caseRight {
@@ -735,7 +735,7 @@ ul.ourContact li a:hover {
 .rightTitle .rightNav {
   height: 39px;
   line-height: 39px;
-  background: url("/images/case_nav_bg.png") 0 13px no-repeat;
+  background: url("/public/images/case_nav_bg.png") 0 13px no-repeat;
   color: #666666;
   font-family: "Microsoft YaHei";
   font-size: 12px;
@@ -751,7 +751,7 @@ ul.ourContact li a:hover {
 
 .caseBanner, .contactBanner, .aboutBanner, .newsBanner, .worksBanner {
   height: 184px;
-  background: url("/images/case_bg.png");
+  background: url("/public/images/case_bg.png");
   text-indent: -9999px;
 }
 
@@ -789,14 +789,14 @@ ul.ourContact li a:hover {
 
 .topBanner {
   height: 184px;
-  background: url("/images/top_banner_bg.png");
+  background: url("/public/images/top_banner_bg.png");
 }
 
 /**
  * 缃戠珯椤堕儴
  */
 .top {
-  background: url("/images/top_bg.png");
+  background: url("/public/images/top_bg.png");
   height: 108px;
 }
 .top .header {
@@ -839,7 +839,7 @@ ul.ourContact li a:hover {
   left: 50%;
   top: 21px;
   margin-left: -4px;
-  background: url("/images/arrow.png") no-repeat;
+  background: url("/public/images/arrow.png") no-repeat;
 }
 .top .header .nav ul li dl {
   position: absolute;
@@ -875,7 +875,7 @@ ul.ourContact li a:hover {
   position: relative;
   padding: 25px 0 15px 0;
   height: 44px;
-  background: url("/images/sr_bottom.png") no-repeat 10px 25px;
+  background: url("/public/images/sr_bottom.png") no-repeat 10px 25px;
 }
 .footer .footerwrap .footNav {
   height: 12px;
@@ -949,11 +949,11 @@ body {
 }
 .bannerWrap .arrowGroup b.arrowLeft {
   margin-left: -480px;
-  background: url("/images/left_arrow.png");
+  background: url("/public/images/left_arrow.png");
 }
 .bannerWrap .arrowGroup b.arrowRight {
   margin-left: 456px;
-  background-image: url("/images/right_arrow.png");
+  background-image: url("/public/images/right_arrow.png");
 }
 .bannerWrap .dotGroup {
   position: absolute;
@@ -968,10 +968,10 @@ body {
   width: 16px;
   height: 16px;
   margin-right: 6px;
-  background: url("/images/normal_dot.png");
+  background: url("/public/images/normal_dot.png");
 }
 .bannerWrap .dotGroup i.current {
-  background: url("/images/focus_dot.png");
+  background: url("/public/images/focus_dot.png");
 }
 
 .serviceWrap {
@@ -984,7 +984,7 @@ body {
 .serviceWrap .ourService .serviceHeader {
   height: 55px;
   width: 100%;
-  background: url("/images/service_bg.png") no-repeat center;
+  background: url("/public/images/service_bg.png") no-repeat center;
   text-indent: -9999px;
 }
 .serviceWrap .ourService .serviceDesc {
@@ -1026,16 +1026,16 @@ body {
   color: #666666;
 }
 .serviceWrap .ourService ul.serviceBlocks li.xuanchuan {
-  background: url("/images/xuanchuan.png") no-repeat center 0;
+  background: url("/public/images/xuanchuan.png") no-repeat center 0;
 }
 .serviceWrap .ourService ul.serviceBlocks li.guanggao {
-  background: url("/images/ad.png") no-repeat center 0;
+  background: url("/public/images/ad.png") no-repeat center 0;
 }
 .serviceWrap .ourService ul.serviceBlocks li.microMovie {
-  background: url("/images/movie.png") no-repeat center 0;
+  background: url("/public/images/movie.png") no-repeat center 0;
 }
 .serviceWrap .ourService ul.serviceBlocks li.otherService {
-  background: url("/images/service.png") no-repeat center 0;
+  background: url("/public/images/service.png") no-repeat center 0;
 }
 .serviceWrap .ourService ul.serviceBlocks li.hover {
   opacity: 0.8;
@@ -1079,24 +1079,24 @@ body {
 .successCase .flowCase .prevCase {
   left: 0;
   top: 28px;
-  background: url("/images/normal_left.png");
+  background: url("/public/images/normal_left.png");
 }
 .successCase .flowCase .prevHover {
-  background: url("/images/hover_left.png") !important;
+  background: url("/public/images/hover_left.png") !important;
 }
 .successCase .flowCase .nextCase {
   right: 0;
   top: 28px;
-  background: url("/images/normal_right.png");
+  background: url("/public/images/normal_right.png");
 }
 .successCase .flowCase .nextHover {
-  background: url("/images/hover_right.png") !important;
+  background: url("/public/images/hover_right.png") !important;
 }
 
 .concactus {
   width: 280px;
   height: 140px;
-  background: url("/images/concactus_bg.png") right 0 no-repeat;
+  background: url("/public/images/concactus_bg.png") right 0 no-repeat;
 }
 .concactus h3 {
   margin-left: 30px;
@@ -1112,7 +1112,7 @@ body {
   padding: 5px 15px;
   width: 99px;
   height: 195px;
-  background: url("/images/online_custer_bg.png") no-repeat;
+  background: url("/public/images/online_custer_bg.png") no-repeat;
 }
 .qqPannel .pannel h1 {
   height: 46px;
@@ -1123,7 +1123,7 @@ body {
 .qqPannel .pannel h2 {
   height: 36px;
   line-height: 36px;
-  background: url("/images/qq_zxbg.png") left center no-repeat;
+  background: url("/public/images/qq_zxbg.png") left center no-repeat;
   padding-left: 28px;
   border-bottom: 1px solid #E5E5E5;
 }
@@ -1139,7 +1139,7 @@ body {
   width: 74px;
   height: 22px;
   text-align: center;
-  background: url("/images/online_custer_qq.png") center center no-repeat;
+  background: url("/public/images/online_custer_qq.png") center center no-repeat;
 }
 .qqPannel .pannelLeft {
   position: absolute;
@@ -1148,7 +1148,7 @@ body {
   margin-top: -59px;
   width: 28px;
   height: 117px;
-  background-image: url("/images/qqpannel_left.png");
+  background-image: url("/public/images/qqpannel_left.png");
   background-repeat: no-repeat;
   cursor: pointer;
 }
@@ -1165,7 +1165,7 @@ body {
 }
 
 .contactBanner {
-  background: url("/images/contact_bg.png");
+  background: url("/public/images/contact_bg.png");
 }
 
 .contactMain .contactRightBody {
@@ -1176,7 +1176,7 @@ body {
   height: 315px;
   padding-left: 60px;
   width: 700px;
-  background: url("/images/contact_lady.png") right center no-repeat;
+  background: url("/public/images/contact_lady.png") right center no-repeat;
 }
 .contactMain .contactRightBody .ourInfo h1 {
   color: #1d2b56;
@@ -1197,7 +1197,7 @@ body {
 }
 
 .aboutBanner {
-  background: url("/images/about_bg.png");
+  background: url("/public/images/about_bg.png");
 }
 
 .aboutRightBody {
@@ -1219,7 +1219,7 @@ body {
 }
 
 .newsBanner {
-  background: url("/images/news_bg.png");
+  background: url("/public/images/news_bg.png");
 }
 
 .newsRightBody {
@@ -1233,7 +1233,7 @@ body {
   line-height: 34px;
   padding-left: 22px;
   border-bottom: 1px dotted #D4D4D4;
-  background: url("/images/news_dot.png") 10px center no-repeat;
+  background: url("/public/images/news_dot.png") 10px center no-repeat;
 }
 .newsRightBody ul li a {
   color: #666666;
@@ -1247,11 +1247,11 @@ body {
 }
 
 .worksBanner {
-  background: url("/images/works_bg.png");
+  background: url("/public/images/works_bg.png");
 }
 
 .worksLeft dl dt.worksContactBg {
-  background: url("/images/works_contact_bg.png") no-repeat;
+  background: url("/public/images/works_contact_bg.png") no-repeat;
 }
 .worksLeft dl dd a {
   color: #666666;
@@ -1261,13 +1261,13 @@ body {
   color: #e7141a;
 }
 .worksLeft .phoneBg {
-  background: url("/images/contact_phone.png") 10px center no-repeat;
+  background: url("/public/images/contact_phone.png") 10px center no-repeat;
 }
 .worksLeft .mobileBg {
-  background: url("/images/contact_mobile.png") 10px center no-repeat;
+  background: url("/public/images/contact_mobile.png") 10px center no-repeat;
 }
 .worksLeft .emailBg {
-  background: url("/images/contact_email.png") 10px center no-repeat;
+  background: url("/public/images/contact_email.png") 10px center no-repeat;
 }
 
 .worksRightBody {

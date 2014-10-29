@@ -35,11 +35,11 @@ body{
     }
     b.arrowLeft{
       margin-left: -480px;
-      background: url("/images/left_arrow.png");
+      background: url("/public/images/left_arrow.png");
     }
     b.arrowRight{
       margin-left: 456px;
-      background-image: url("/images/right_arrow.png");
+      background-image: url("/public/images/right_arrow.png");
     }
   }
   .dotGroup{
@@ -54,10 +54,10 @@ body{
       width: 16px;
       height: 16px;
       margin-right: 6px;
-      background: url("/images/normal_dot.png");
+      background: url("/public/images/normal_dot.png");
     }
     i.current{
-      background: url("/images/focus_dot.png");
+      background: url("/public/images/focus_dot.png");
     }
   }
 }
@@ -71,7 +71,7 @@ body{
     .serviceHeader{
       height: 55px;
       width: 100%;
-      background: url("/images/service_bg.png") no-repeat center;
+      background: url("/public/images/service_bg.png") no-repeat center;
       text-indent: -9999px;
     }
     .serviceDesc{
@@ -111,16 +111,16 @@ body{
         }
       }
       li.xuanchuan{
-        background: url("/images/xuanchuan.png") no-repeat center 0;
+        background: url("/public/images/xuanchuan.png") no-repeat center 0;
       }
       li.guanggao{
-        background: url("/images/ad.png") no-repeat center 0;
+        background: url("/public/images/ad.png") no-repeat center 0;
       }
       li.microMovie{
-        background: url("/images/movie.png") no-repeat center 0;
+        background: url("/public/images/movie.png") no-repeat center 0;
       }
       li.otherService{
-        background: url("/images/service.png") no-repeat center 0;
+        background: url("/public/images/service.png") no-repeat center 0;
       }
       li.hover{
         @include opacity(80);
@@ -166,25 +166,25 @@ body{
     .prevCase{
       left: 0;
       top: 28px;
-      background: url("/images/normal_left.png");
+      background: url("/public/images/normal_left.png");
     }
     .prevHover{
-      background: url("/images/hover_left.png")!important;
+      background: url("/public/images/hover_left.png")!important;
     }
     .nextCase{
       right: 0;
       top: 28px;
-      background: url("/images/normal_right.png");
+      background: url("/public/images/normal_right.png");
     }
     .nextHover{
-      background: url("/images/hover_right.png")!important;
+      background: url("/public/images/hover_right.png")!important;
     }
   }
 }
 .concactus{
   width: 280px;
   height: 140px;
-  background: url("/images/concactus_bg.png") right 0 no-repeat;
+  background: url("/public/images/concactus_bg.png") right 0 no-repeat;
   h3{
     margin-left: 30px;
   }
@@ -198,7 +198,7 @@ body{
     padding: 5px 15px;
     width: 99px;
     height: 195px;
-    background: url("/images/online_custer_bg.png") no-repeat;
+    background: url("/public/images/online_custer_bg.png") no-repeat;
     h1{
       @include height(46px);
       @extend .yaheiNormal;
@@ -207,7 +207,7 @@ body{
     }
     h2{
       @include height(36px);
-      background: url("/images/qq_zxbg.png") left center no-repeat;
+      background: url("/public/images/qq_zxbg.png") left center no-repeat;
       padding-left: 28px;
       @extend .Arial12;
       border-bottom: 1px solid #E5E5E5;
@@ -222,7 +222,7 @@ body{
         width: 74px;
         height: 22px;
         text-align: center;
-        background: url("/images/online_custer_qq.png") center center no-repeat;
+        background: url("/public/images/online_custer_qq.png") center center no-repeat;
       }
     }
   }
@@ -233,7 +233,7 @@ body{
     margin-top: -59px;
     width: 28px;
     height: 117px;
-    background-image: url("/images/qqpannel_left.png");
+    background-image: url("/public/images/qqpannel_left.png");
     background-repeat: no-repeat;
     cursor: pointer;
   }

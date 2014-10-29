@@ -1,4 +1,7 @@
 module.exports = {
+	"extrabux": {
+		"index": "first-demo"
+	},
 	"showlife": {	// nodeframe项目
 		"index": "首页--上海书然文化传播有限公司",
 		"about": "关于我们--上海书然文化传播有限公司",

@@ -5,7 +5,10 @@
 module.exports = {
   "host": 'localhost',
   "port": 8080,
-  "logLevel": "log",
+  "log": {
+    "logLevel": "log",
+    "logDir": "logs"
+  },
   "baseData": {},
   "environment": 'development', // production 生产环境  development 开发环境
   "mysql": { // mysql数据库配置

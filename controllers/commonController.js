@@ -24,7 +24,7 @@ exports.base = function(req, res) {
   var innerPath = tplArr.join('/')
 
   // 从配置中获取页面title
-  var pageTitle = pageTitleObj[appName][innerPath] || "鑫合汇"
+  var pageTitle = pageTitleObj &&  pageTitleObj[appName] && pageTitleObj[appName][innerPath] || "鑫合汇"
 
   // 如果对应目录的文件存在，则渲染文件
   fs.exists(reqpath, function(exists) {
@@ -41,9 +41,8 @@ exports.base = function(req, res) {
         environment: config['environment'],
         jsFile: false
       }
-
       // 根据当前url获取对应appjs的路径
-      data['jsFile'] = common.getAppjsPath(url);
+      data['jsFile'] = common.getAppjsPath(url.toLowerCase());
 
       // extrabux路由
       if (url.indexOf('extrabux') !== -1) {
@@ -65,8 +64,42 @@ exports.dirList = function(req, res) {
   var method = req.method
   var url = req.url
   var tplpath = url.slice(1) // view的路径
+  var href, mtime, reqpath, fullpath;
+  var mtimeObj = {}, mtimeArr = [];
+
+  // 遍历pagetitle.js中的各个目录，获取各个目录的最后修改时间
+  for(var app in pageTitleObj) {
+    for (var pageUrl in pageTitleObj[app]) {
+
+      reqpath = "/" + app + "/" + pageUrl;
+      // 获取文件目录
+      fullpath = VIEWS + reqpath + '.html';
+
+      // 文件存在则取出最后修改时间
+      if (fs.existsSync(fullpath)) {
+        mtime = fs.statSync(fullpath)['mtime'];
+        mtimeArr.push({"reqpath": reqpath, "mtime": mtime, "title": pageTitleObj[app][pageUrl], "appname": app});
+      }
+    }
+  }
+
+  // 根据mtime排序
+  mtimeArr.sort(common.compare('mtime'));
+
+  // 排序后转化mtime
+  for(var j = 0, reqpath, appname, mtime, title; j < mtimeArr.length; j++){
+    reqpath = mtimeArr[j]['reqpath'];
+    mtime = mtimeArr[j]['mtime'];
+    title = mtimeArr[j]['title'];
+    appname = mtimeArr[j]['appname'];
+
+    mtimeObj[reqpath] = {};
+    mtimeObj[reqpath]['appname'] = appname;
+    mtimeObj[reqpath]['mtime'] = mtime;
+    mtimeObj[reqpath]['title'] = title;
+  }
 
   res.render(tplpath, {
-    pageTitleObj: pageTitleObj
+    mtimeObj: mtimeObj
   })
 }

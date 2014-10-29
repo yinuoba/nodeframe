@@ -98,13 +98,13 @@ ul.ourContact{
   }
 }
 .contact_phone_bg{
-  background: url("/images/contact_phone.png") left center no-repeat;
+  background: url("/public/images/contact_phone.png") left center no-repeat;
 }
 .contact_mobile_bg{
-  background: url("/images/contact_mobile.png") left center no-repeat;
+  background: url("/public/images/contact_mobile.png") left center no-repeat;
 }
 .contact_email_bg{
-  background: url("/images/contact_email.png") left center no-repeat;
+  background: url("/public/images/contact_email.png") left center no-repeat;
 }
 
 .caseBorder{
@@ -160,7 +160,7 @@ ul.ourContact{
     li{
       @include height(39px);
       @extend .caseBorder;
-          background: url("/images/item_bg_normal.png") 10px center no-repeat;
+          background: url("/public/images/item_bg_normal.png") 10px center no-repeat;
           padding-left: 25px;
           a{
             @extend .caseListFont;
@@ -171,7 +171,7 @@ ul.ourContact{
           }
     }
     li.current{
-      background: url("/images/item_bg.png") 10px center no-repeat #F8F8F8;
+      background: url("/public/images/item_bg.png") 10px center no-repeat #F8F8F8;
       a{
         color: $hoverColor;
       }
@@ -182,7 +182,7 @@ ul.ourContact{
     dt{
       width: 220px;
       height: 80px;
-      background-image: url("/images/service_item.png");
+      background-image: url("/public/images/service_item.png");
       background-repeat: no-repeat;
       @extend .caseBorder;
       text-indent: -9999px;
@@ -202,10 +202,10 @@ ul.ourContact{
       }
     }
     dd.movieItem{
-      background: url("/images/case_movie.png") 10px center no-repeat;
+      background: url("/public/images/case_movie.png") 10px center no-repeat;
     }
     dd.otherItem{
-      background: url("/images/case_service.png") 10px center no-repeat;
+      background: url("/public/images/case_service.png") 10px center no-repeat;
     }
   }
 }
@@ -221,7 +221,7 @@ ul.ourContact{
   }
   .rightNav{
     @include height(39px);
-    background: url("/images/case_nav_bg.png") 0 13px no-repeat;
+    background: url("/public/images/case_nav_bg.png") 0 13px no-repeat;
     color: $commonFontColor;
     font-family: "Microsoft YaHei";
     font-size: 12px;
@@ -239,7 +239,7 @@ ul.ourContact{
 .caseBanner{
   @extend .resetWrap;
   height: 184px;
-  background: url("/images/case_bg.png");
+  background: url("/public/images/case_bg.png");
   text-indent: -9999px;
 }
 
@@ -280,5 +280,5 @@ ul.ourContact{
 .topBanner{
   @extend .fullWrap;
   height: 184px;
-  background: url("/images/top_banner_bg.png");
+  background: url("/public/images/top_banner_bg.png");
 }

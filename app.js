@@ -52,15 +52,15 @@ var app = express()
 var server = http.createServer(app)
 
 // 日志相关
-common.mkdir('logs')
+common.mkdir(config['log']['logDir'])
 var log = require(COMMON + 'log')
-logger.setLevel(config["logLevel"])
+logger.setLevel(config['log']['logLevel'])
 log.use(app) // 配置日志
 
 app.use(express.compress())
 app.use(express.favicon())
 
-app.set('port', config["port"])
+app.set('port', config['port'])
 
 app.engine('.html', ejs.__express)
 app.set('view engine', 'html')
@@ -72,8 +72,8 @@ app.use(express.urlencoded())
 app.use(express.methodOverride())
 
 // livereload
-if(config['environment'] == 'development'){
-	require(COMMON + 'livereload')
+if (config['environment'] == 'development') {
+  require(COMMON + 'livereload')
 }
 
 // 路由
@@ -81,5 +81,5 @@ var routes = require(ROUTERS + 'router')
 routes(app)
 
 server.listen(app.get('port'), function() {
-	logger.info('Express server listening on port ' + app.get('port'))
+  logger.info('Express server listening on port ' + app.get('port'))
 })

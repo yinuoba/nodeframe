@@ -1,7 +1,7 @@
 {
   "name": "nodeframe",
   "description": "A node frame by nodeJs",
-  "author": "Hoogle<zeng.xianghu@hotmail.com>",
+  "author": "Hoogle<zeng.xianghu@foxmail.com>",
   "version": "0.0.1",
   "main": "app.js",
   "private": false,

@@ -1,6 +1,6 @@
 .contactBanner{
 	@extend .caseBanner;
-	background: url("/images/contact_bg.png");
+	background: url("/public/images/contact_bg.png");
 }
 .contactMain{
 	.contactRightBody{
@@ -10,7 +10,7 @@
 			height: 315px;
 			padding-left: 60px;
 			width: 700px;
-			background: url("/images/contact_lady.png") right center no-repeat;
+			background: url("/public/images/contact_lady.png") right center no-repeat;
 			h1{
 				color: $weightColor;
 				font-family: "Microsoft YaHei";

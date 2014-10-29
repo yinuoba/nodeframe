@@ -3,7 +3,7 @@
  */
 .top{
   @extend .fullWrap;
-  background: url("/images/top_bg.png");
+  background: url("/public/images/top_bg.png");
   height: 108px;
   .header{
     @extend .resetWrap;
@@ -45,7 +45,7 @@
           left: 50%;
           top: 21px;
           margin-left: -4px;
-          background: url("/images/arrow.png") no-repeat;
+          background: url("/public/images/arrow.png") no-repeat;
         }
         dl{
           position: absolute;

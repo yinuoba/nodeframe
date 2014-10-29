@@ -1,6 +1,6 @@
 //配置require
 require.config({
-  baseUrl: '../js',
+  baseUrl: '../public/js',
   urlArgs: '0.0.1',
   paths: {
     //Core Libraries

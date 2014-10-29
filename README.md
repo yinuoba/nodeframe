@@ -7,14 +7,16 @@ nodeframe
 
 * 根目录执行"npm install"，安装项目依赖
 
-* 根目录执行"node app"启动服务
+* 根目录执行"npm install supervisor -g"，全局安装supervisor监控node文件
+
+* 根目录双击run.bat（被监控的文件改动，自动重启服务器）或执行"node app"，启动服务
 
 
 ## 项目说明
 
 * 把html文件放到views中，把css、JavaScript、image等静态资源放到public文件夹中。
 
-* 如果在views文件夹中添加了extrabux文件夹，extrabux文件夹下有index.html，则访问路径为http://localhost:8080/extrabux/index，注意端口号在conf/config.js中配置。
+* 如果在views文件夹中添加了account文件夹，account文件夹下有login.html，则访问路径为http://localhost:8080/account/login，注意端口号在conf/config.js中配置。
 
 * http://localhost:8080/默认访问views中的index.html，可查看应用目录列表。
 
@@ -45,7 +47,6 @@ nodeframe
     │      ├─js
     │      │  ├─base ─ 基础js文件
     │      │  ├─appjs ─ 应用js
-    │      │  └─plugin ─ 一些插件
     │      └─sass
     │          ├─page 模块sass文件
     │      ├─config.rb ─ sass、compass配置文件
@@ -53,16 +54,12 @@ nodeframe
     │      ├─Gruntfile.js 打包配置文件
     ├─routers 路由
     └─views 模版文件夹 所有的html文件放到这个目录 可分文件夹存放
-    │    ├─wextrabux - wextrabux test项目html文件
-    │    ├─partials 独立模块 如头尾
     │    ├─index.html ─ index模块
     │    ├─pagetitle ─ 目录配置文件
-    ├─extrabux.json test数据
     ├─app.js 启动文件
     ├─package.json
     ├─README.md 项目说明文件
-
-
+    ├─run.bat 项目启动文件（要求已全局安装supervisor）
 
 
   [1]: http://nodejs.org/download/
